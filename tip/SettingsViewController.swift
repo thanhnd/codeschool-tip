@@ -16,6 +16,10 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let intValue = defaults.integerForKey("default_tip")
+        tipControl.selectedSegmentIndex = intValue;
     }
 
     override func didReceiveMemoryWarning() {
