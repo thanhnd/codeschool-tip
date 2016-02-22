@@ -84,7 +84,7 @@
                     <navigationItem key="navigationItem" id="TU9-iB-5aB">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="v00-zJ-B5z">
                             <connections>
-                                <segue destination="JBd-5G-0EV" kind="push" id="rcw-Mz-TmP"/>
+                                <segue destination="JBd-5G-0EV" kind="push" identifier="settingSegue" id="rcw-Mz-TmP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -107,7 +107,7 @@
         <!--Settings View Controller-->
         <scene sceneID="HcL-Jk-ApK">
             <objects>
-                <viewController id="JBd-5G-0EV" customClass="SettingsViewController" customModule="tip" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JBd-5G-0EV" customClass="SettingsViewController" customModule="tip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9iA-Ir-SZq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

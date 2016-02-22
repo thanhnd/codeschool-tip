@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol SettingProtocol {
+    func setDefaultTipIndex(tipIndex: Int)
+}
+
 class SettingsViewController: UIViewController {
+    
+    var delegate:SettingProtocol?
 
     @IBOutlet weak var tipControl: UISegmentedControl!
     
@@ -40,7 +46,10 @@ class SettingsViewController: UIViewController {
 
     @IBAction func onValueChanged(sender: AnyObject) {
         let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setInteger(tipControl.selectedSegmentIndex, forKey: "default_tip")
+        let tipIndex = tipControl.selectedSegmentIndex
+        defaults.setInteger(tipIndex, forKey: "default_tip")
         defaults.synchronize()
+        
+        delegate?.setDefaultTipIndex(tipIndex)
     }
 }
