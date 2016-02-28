@@ -40,7 +40,8 @@ class ViewController: UIViewController, SettingProtocol {
 
     @IBAction func onEditingChanged(sender: AnyObject) {
         let tipPercentages = [0.18, 0.2, 0.22]
-        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        selectTipIndex = tipControl.selectedSegmentIndex
+        let tipPercentage = tipPercentages[selectTipIndex]
 
         let billAmount = NSString(string: billField.text!).doubleValue
         let tip = billAmount * tipPercentage
