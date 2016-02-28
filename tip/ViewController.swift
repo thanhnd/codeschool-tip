@@ -26,6 +26,7 @@ class ViewController: UIViewController, UITextFieldDelegate, SettingProtocol {
         selectTipIndex = defaults.integerForKey("default_tip")
         
         billField.delegate = self
+        billField.becomeFirstResponder()
     }
     
     
@@ -49,8 +50,11 @@ class ViewController: UIViewController, UITextFieldDelegate, SettingProtocol {
         let billAmount = NSString(string: billField.text!).doubleValue
         let tip = billAmount * tipPercentage
         let total = billAmount + tip
-        tipLabel.text = String(format: "$%.2f", arguments: [tip])
-        totalLabel.text = String(format: "$%.2f", arguments: [total])
+        
+        let formatter = NSNumberFormatter()
+        formatter.numberStyle = .CurrencyStyle
+        tipLabel.text = formatter.stringFromNumber(tip)
+        totalLabel.text = formatter.stringFromNumber(total)
     }
 
     @IBAction func onTap(sender: AnyObject) {
