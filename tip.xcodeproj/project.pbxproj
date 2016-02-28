@@ -13,6 +13,7 @@
 		921D0A971C5E496400735933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921D0A961C5E496400735933 /* Assets.xcassets */; };
 		921D0A9A1C5E496400735933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921D0A981C5E496400735933 /* LaunchScreen.storyboard */; };
 		921D0AA21C5E68E200735933 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D0AA11C5E68E200735933 /* SettingsViewController.swift */; };
+		92A18DCE1C82971C00001BB0 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A18DCD1C82971C00001BB0 /* StringUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		921D0A991C5E496400735933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		921D0A9B1C5E496400735933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		921D0AA11C5E68E200735933 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		92A18DCD1C82971C00001BB0 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				921D0A981C5E496400735933 /* LaunchScreen.storyboard */,
 				921D0A9B1C5E496400735933 /* Info.plist */,
 				921D0AA11C5E68E200735933 /* SettingsViewController.swift */,
+				92A18DCD1C82971C00001BB0 /* StringUtils.swift */,
 			);
 			path = tip;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A18DCE1C82971C00001BB0 /* StringUtils.swift in Sources */,
 				921D0A921C5E496400735933 /* ViewController.swift in Sources */,
 				921D0A901C5E496400735933 /* AppDelegate.swift in Sources */,
 				921D0AA21C5E68E200735933 /* SettingsViewController.swift in Sources */,
@@ -290,6 +294,7 @@
 				921D0AA01C5E496400735933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
